@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to create a new project card
     function createProjectCard(projectNumber, imageSrc) {
-        const categories = ['infrastructure', 'cicd', 'kubernetes', 'frontend'];
+        const categories = ['infrastructure', 'cicd', 'kubernetes', 'frontend', 'itsupport'];
         const randomCategories = [];
         
         // Randomly select 1-2 categories
@@ -101,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'CI/CD Implementation',
             'Network Security Solution',
             'Serverless Application',
-            'Microservices Architecture'
+            'Microservices Architecture',
+            'IT Support Infrastructure',
+            'Enterprise Network Management'
         ];
         
         const descriptions = [
@@ -112,7 +114,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'Implemented a comprehensive CI/CD solution with automated testing and deployment strategies.',
             'Designed a robust network security solution with intrusion detection and prevention systems.',
             'Built a serverless application using AWS Lambda and API Gateway for cost-effective scaling.',
-            'Architected a microservices-based system that improved modularity and team productivity.'
+            'Architected a microservices-based system that improved modularity and team productivity.',
+            'Implemented enterprise-wide IT support infrastructure with centralized management and monitoring systems.',
+            'Designed and deployed a comprehensive network management solution for multi-site operations.'
         ];
         
         // Randomly select title and description
@@ -125,7 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'infrastructure': ['AWS', 'Azure', 'Terraform', 'Ansible', 'CloudFormation', 'Pulumi'],
             'cicd': ['Jenkins', 'GitHub Actions', 'CircleCI', 'Travis CI', 'ArgoCD', 'SonarQube'],
             'kubernetes': ['Kubernetes', 'Helm', 'Istio', 'Prometheus', 'Grafana', 'Docker'],
-            'frontend': ['React', 'Vue.js', 'Angular', 'HTML/CSS', 'JavaScript', 'Bootstrap']
+            'frontend': ['React', 'Vue.js', 'Angular', 'HTML/CSS', 'JavaScript', 'Bootstrap'],
+            'itsupport': ['Active Directory', 'Windows Server', 'Network Management', 'ERP Systems', 'Firewall', 'Backup Solutions']
         };
         
         // Select technologies based on categories

@@ -15,24 +15,31 @@
     <link rel="stylesheet" href="css/responsive-fixes.css">
     <link rel="stylesheet" href="css/direct-styles.css">
     <link rel="stylesheet" href="css/hero-mobile-fixes.css">
+    <link rel="stylesheet" href="css/experience-compact.css">
+    <link rel="stylesheet" href="css/section-colors.css">
+    <link rel="stylesheet" href="css/section-accessibility.css">
+    <link rel="stylesheet" href="css/social-fix.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- GSAP for advanced animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="favicon/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="48x48" href="favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="favicon/favicon.svg">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <!-- Profile Photo as Favicon -->
-    <link rel="icon" type="image/png" href="img/profile.jpg">
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#000080">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -52,6 +59,8 @@
             </ul>
         </div>
     </nav>
+    
+    <main id="main-content">
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -71,11 +80,11 @@
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
                     <a href="#projects" class="btn btn-secondary">View My Work</a>
                 </div>
-                <div class="hero-social-icons">
-                    <a href="https://github.com/calvin-sirimase?tab=repositories" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/calvinsirimase" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://x.com/VinDev22" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/vindev24/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <div class="hero-social-icons" style="display: flex; opacity: 1; visibility: visible; z-index: 10; position: relative;">
+                    <a href="https://github.com/calvin-sirimase?tab=repositories" target="_blank" aria-label="GitHub" style="opacity: 1; visibility: visible;"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/calvinsirimase" target="_blank" aria-label="LinkedIn" style="opacity: 1; visibility: visible;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/VinDev22" target="_blank" aria-label="Twitter" style="opacity: 1; visibility: visible;"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/vindev24/" target="_blank" aria-label="Instagram" style="opacity: 1; visibility: visible;"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -429,55 +438,99 @@
                 <h2>Work Experience</h2>
                 <div class="underline"></div>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023 Apr - Present</div>
-                    <div class="timeline-content">
-                        <h3>IT Infrastructure Staff</h3>
-                        <h4>PT. Saka Indah Abadi | West Cikarang, Bekasi Regency</h4>
-                        <p>Provide administrative support for office operations and IT infrastructure.</p>
-                        <ul>
-                            <li>ERP system support and customization with vendor (FINA by Imamatek)</li>
-                            <li>Managing user accounts, permissions, network access and Proxmox</li>
-                            <li>Troubleshooting hardware, software, network issues, and backup systems</li>
-                            <li>Administering hosting, servers (Ubuntu, Windows Server 2008 R2, and 2019 Datacenter), and SQL databases (Firebird)</li>
-                            <li>Configuring and maintaining network infrastructure (LAN, WAN, VPN, Mikrotik, firewalls)</li>
-                            <li>Managing NAS systems (Ubuntu Server 22.04.5.LTS and Synology DS1621+)</li>
-                            <li>Handling mail systems, CMS (CPanel), e-tax invoices, and CCTV systems</li>
-                        </ul>
+            <div class="experience-container">
+                <!-- Tabs Navigation -->
+                <div class="experience-tabs">
+                    <button class="experience-tab active" data-tab="exp-tab-1">IT Infrastructure</button>
+                    <button class="experience-tab" data-tab="exp-tab-2">IT Staff</button>
+                    <button class="experience-tab" data-tab="exp-tab-3">IT Support</button>
+                </div>
+                
+                <!-- Tab Contents -->
+                <div id="exp-tab-1" class="experience-content active">
+                    <div class="compact-timeline">
+                        <div class="compact-timeline-item">
+                            <div class="compact-timeline-header">
+                                <div class="compact-timeline-title">
+                                    <h3>IT Infrastructure Staff</h3>
+                                    <h4>PT. Saka Indah Abadi | West Cikarang, Bekasi Regency</h4>
+                                </div>
+                                <div class="compact-timeline-date">2023 Apr - Present</div>
+                                <div class="compact-timeline-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="compact-timeline-body">
+                                <div class="compact-timeline-content">
+                                    <p>Provide administrative support for office operations and IT infrastructure.</p>
+                                    <ul>
+                                        <li>ERP system support and customization with vendor (FINA by Imamatek)</li>
+                                        <li>Managing user accounts, permissions, network access and Proxmox</li>
+                                        <li>Troubleshooting hardware, software, network issues, and backup systems</li>
+                                        <li>Administering hosting, servers (Ubuntu, Windows Server 2008 R2, and 2019 Datacenter), and SQL databases (Firebird)</li>
+                                        <li>Configuring and maintaining network infrastructure (LAN, WAN, VPN, Mikrotik, firewalls)</li>
+                                        <li>Managing NAS systems (Ubuntu Server 22.04.5.LTS and Synology DS1621+)</li>
+                                        <li>Handling mail systems, CMS (CPanel), e-tax invoices, and CCTV systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022 Okt - 2023 March</div>
-                    <div class="timeline-content">
-                        <h3>IT STaff</h3>
-                        <h4>KJPP Antonius Setiady & Rekan │Jakarta</h4>
-                        <p>Responsible</p>
-                        <ul>
-                            <li>Network Admin LAN, WAN, NAS Synology</li>
-                            <li>Computer repair, Printer, Fingerprint and pheriperal</li>
-                            <li>CMS Web admin & CPanel Email Admin and Data Entry and Surveyor</li>
-                        </ul>
+                
+                <div id="exp-tab-2" class="experience-content">
+                    <div class="compact-timeline">
+                        <div class="compact-timeline-item">
+                            <div class="compact-timeline-header">
+                                <div class="compact-timeline-title">
+                                    <h3>IT Staff</h3>
+                                    <h4>KJPP Antonius Setiady & Rekan │Jakarta</h4>
+                                </div>
+                                <div class="compact-timeline-date">2022 Oct - 2023 Mar</div>
+                                <div class="compact-timeline-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="compact-timeline-body">
+                                <div class="compact-timeline-content">
+                                    <p>Responsible for IT operations and support.</p>
+                                    <ul>
+                                        <li>Network Admin LAN, WAN, NAS Synology</li>
+                                        <li>Computer repair, Printer, Fingerprint and pheriperal</li>
+                                        <li>CMS Web admin & CPanel Email Admin and Data Entry and Surveyor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022 Apr - 2022 Aug</div>
-                    <div class="timeline-content">
-                        <h3>IT Support</h3>
-                        <h4>CV. Binaya | Jl. Sultan Babullah No.48, Ambon</h4>
-                        <p>Provided comprehensive IT infrastructure support for the organization.</p>
-                        <ul>
-                            <li>Supporting client devices (computers, printers, fingerprint devices)</li>
-                            <li>Managing directory sharing, printer sharing, troubleshooting hardware, software, network</li>
-                            <li>Serving as a primary data manager using Microsoft Excel</li>
-                            <li>Assisting in managing office administration related to government matters</li>
-                            <li>Coordinating with the sales team regarding field data</li>
-                        </ul>
+                
+                <div id="exp-tab-3" class="experience-content">
+                    <div class="compact-timeline">
+                        <div class="compact-timeline-item">
+                            <div class="compact-timeline-header">
+                                <div class="compact-timeline-title">
+                                    <h3>IT Support</h3>
+                                    <h4>CV. Binaya | Jl. Sultan Babullah No.48, Ambon</h4>
+                                </div>
+                                <div class="compact-timeline-date">2022 Apr - 2022 Aug</div>
+                                <div class="compact-timeline-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="compact-timeline-body">
+                                <div class="compact-timeline-content">
+                                    <p>Provided comprehensive IT infrastructure support for the organization.</p>
+                                    <ul>
+                                        <li>Supporting client devices (computers, printers, fingerprint devices)</li>
+                                        <li>Managing directory sharing, printer sharing, troubleshooting hardware, software, network</li>
+                                        <li>Serving as a primary data manager using Microsoft Excel</li>
+                                        <li>Assisting in managing office administration related to government matters</li>
+                                        <li>Coordinating with the sales team regarding field data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -497,9 +550,10 @@
                 <button class="filter-btn" data-filter="cicd">CI/CD</button>
                 <button class="filter-btn" data-filter="kubernetes">Kubernetes</button>
                 <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="itsupport">IT Support Infra</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="infrastructure cicd">
+                <div class="project-card" data-category="infrastructure cicd itsupport">
                     <div class="project-img">
                         <img src="img/project1.jpg" alt="Project 1">
                     </div>
@@ -556,7 +610,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="infrastructure kubernetes">
+                <div class="project-card" data-category="infrastructure kubernetes itsupport">
                     <div class="project-img">
                         <img src="img/project4.jpg" alt="Project 4">
                     </div>
@@ -661,6 +715,8 @@
             </div>
         </div>
     </section>
+    
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -781,7 +837,7 @@
     });
     </script>
     
-    <script src="js/profile-favicon.js"></script>
+    <script src="js/favicon-update.js"></script>
     <script src="js/text-visibility.js"></script>
     <script src="js/main.js"></script>
     <script src="js/title-rotator.js"></script>
@@ -790,5 +846,8 @@
     <script src="js/skills-layout.js"></script>
     <script src="js/project-loader.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/experience-compact.js"></script>
+    <script src="js/section-transitions.js"></script>
+    <script src="js/social-fix.js"></script>
 </body>
 </html>

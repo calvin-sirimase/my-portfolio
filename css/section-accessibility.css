@@ -1,0 +1,164 @@
+/* Section Accessibility Enhancements
+ * Ensures proper contrast and readability across all section colors
+ */
+
+/* Ensure text remains readable on all backgrounds */
+#home {
+    --section-text: #1e293b;
+    --section-heading: #000080;
+    --section-subheading: #4169E1;
+    --section-link: #4169E1;
+    --section-link-hover: #000080;
+}
+
+#about {
+    --section-text: #1e293b;
+    --section-heading: #000080;
+    --section-subheading: #4169E1;
+    --section-link: #4169E1;
+    --section-link-hover: #000080;
+}
+
+#skills {
+    --section-text: #1e293b;
+    --section-heading: #000080;
+    --section-subheading: #4169E1;
+    --section-link: #4169E1;
+    --section-link-hover: #000080;
+}
+
+#experience {
+    --section-text: #1e293b;
+    --section-heading: #000080;
+    --section-subheading: #4169E1;
+    --section-link: #4169E1;
+    --section-link-hover: #000080;
+}
+
+#projects {
+    --section-text: #1e293b;
+    --section-heading: #000080;
+    --section-subheading: #4169E1;
+    --section-link: #4169E1;
+    --section-link-hover: #000080;
+}
+
+#contact {
+    --section-text: #1e293b;
+    --section-heading: #000080;
+    --section-subheading: #4169E1;
+    --section-link: #4169E1;
+    --section-link-hover: #000080;
+}
+
+/* Apply section-specific text colors */
+section {
+    color: var(--section-text);
+}
+
+section h2 {
+    color: var(--section-heading);
+}
+
+section h3, 
+section h4 {
+    color: var(--section-subheading);
+}
+
+section a:not(.btn) {
+    color: var(--section-link);
+}
+
+section a:not(.btn):hover {
+    color: var(--section-link-hover);
+}
+
+/* Focus indicators for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus {
+    outline: 3px solid rgba(65, 105, 225, 0.5);
+    outline-offset: 2px;
+}
+
+/* Skip to content link for keyboard users */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 9999;
+    transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+    .section-divider {
+        background: CanvasText;
+        height: 2px;
+    }
+    
+    section {
+        border-bottom: 1px solid CanvasText;
+    }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    #home {
+        --section-text: #e2e8f0;
+        --section-heading: #90cdf4;
+        --section-subheading: #63b3ed;
+        --section-link: #63b3ed;
+        --section-link-hover: #90cdf4;
+    }
+    
+    #about {
+        --section-text: #e2e8f0;
+        --section-heading: #90cdf4;
+        --section-subheading: #63b3ed;
+        --section-link: #63b3ed;
+        --section-link-hover: #90cdf4;
+    }
+    
+    #skills {
+        --section-text: #e2e8f0;
+        --section-heading: #90cdf4;
+        --section-subheading: #63b3ed;
+        --section-link: #63b3ed;
+        --section-link-hover: #90cdf4;
+    }
+    
+    #experience {
+        --section-text: #e2e8f0;
+        --section-heading: #90cdf4;
+        --section-subheading: #63b3ed;
+        --section-link: #63b3ed;
+        --section-link-hover: #90cdf4;
+    }
+    
+    #projects {
+        --section-text: #e2e8f0;
+        --section-heading: #90cdf4;
+        --section-subheading: #63b3ed;
+        --section-link: #63b3ed;
+        --section-link-hover: #90cdf4;
+    }
+    
+    #contact {
+        --section-text: #e2e8f0;
+        --section-heading: #90cdf4;
+        --section-subheading: #63b3ed;
+        --section-link: #63b3ed;
+        --section-link-hover: #90cdf4;
+    }
+}

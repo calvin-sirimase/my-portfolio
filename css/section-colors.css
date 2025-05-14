@@ -1,0 +1,121 @@
+/* Section Colors - Distinct background colors for each major section
+ * Colors are chosen to complement each other while maintaining readability
+ */
+
+:root {
+    /* Main color palette */
+    --home-bg: #f0f7ff;      /* Light blue */
+    --about-bg: #f7f7ff;     /* Light lavender */
+    --skills-bg: #f0f8f7;    /* Light mint */
+    --experience-bg: #f8f5ff; /* Light purple */
+    --projects-bg: #fff8f0;  /* Light peach */
+    --contact-bg: #f0f4ff;   /* Light sky blue */
+    
+    /* Text colors for contrast */
+    --dark-text: #1e293b;    /* Dark slate for text on light backgrounds */
+    --light-text: #f8fafc;   /* Light slate for text on dark backgrounds */
+    
+    /* Transition settings */
+    --section-transition: background-color 0.5s ease;
+}
+
+/* Base section styling */
+section {
+    position: relative;
+    transition: var(--section-transition);
+    z-index: 1;
+}
+
+/* Section-specific background colors */
+#home {
+    background-color: var(--home-bg);
+}
+
+#about {
+    background-color: var(--about-bg);
+}
+
+#skills {
+    background-color: var(--skills-bg);
+}
+
+#experience {
+    background-color: var(--experience-bg);
+}
+
+#projects {
+    background-color: var(--projects-bg);
+}
+
+#contact {
+    background-color: var(--contact-bg);
+}
+
+/* Section dividers for smooth transitions */
+.section-divider {
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.divider-home-about {
+    background: linear-gradient(to bottom, var(--home-bg), var(--about-bg));
+}
+
+.divider-about-skills {
+    background: linear-gradient(to bottom, var(--about-bg), var(--skills-bg));
+}
+
+.divider-skills-experience {
+    background: linear-gradient(to bottom, var(--skills-bg), var(--experience-bg));
+}
+
+.divider-experience-projects {
+    background: linear-gradient(to bottom, var(--experience-bg), var(--projects-bg));
+}
+
+.divider-projects-contact {
+    background: linear-gradient(to bottom, var(--projects-bg), var(--contact-bg));
+}
+
+/* Ensure text remains readable on all backgrounds */
+section h2, 
+section h3, 
+section p, 
+section li {
+    color: var(--dark-text);
+}
+
+/* Adjust section padding for better spacing */
+section {
+    padding: 80px 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-divider {
+        height: 60px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --home-bg: #0a192f;      /* Dark blue */
+        --about-bg: #112240;     /* Navy blue */
+        --skills-bg: #1a3045;    /* Dark teal */
+        --experience-bg: #1d1836; /* Dark purple */
+        --projects-bg: #2d2a3f;  /* Dark slate */
+        --contact-bg: #0d1b2a;   /* Dark navy */
+        
+        --dark-text: #e2e8f0;    /* Light gray for dark mode */
+    }
+}

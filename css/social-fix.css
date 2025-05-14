@@ -1,0 +1,37 @@
+/* Fix for social icons in hero section */
+.hero-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 128, 0.15);
+    transition: all 0.3s ease;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.hero-social-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 128, 0.2);
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Ensure icons are visible on all backgrounds */
+.hero-social-icons i {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
