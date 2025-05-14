@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Calvin Emilianus Sirimase | IT Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/hero-wave.css">
+    <link rel="stylesheet" href="css/skills-layout.css">
+    <link rel="stylesheet" href="css/project-styles.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/text-visibility.css">
+    <link rel="stylesheet" href="css/responsive-fixes.css">
+    <link rel="stylesheet" href="css/direct-styles.css">
+    <link rel="stylesheet" href="css/hero-mobile-fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- Profile Photo as Favicon -->
+    <link rel="icon" type="image/png" href="img/profile.jpg">
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#000080">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Calvin<span>Sirimase</span></a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Decorative elements for the wave background -->
+        <div class="hero-decoration">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Calvin Sirimase</span></h1>
+                <h2 id="job-title">DevOps Engineer</h2>
+                <p>Build Server and Networking, Deploy, Automating infrastructure, optimizing CI/CD pipelines, and ensuring scalable cloud solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="hero-social-icons">
+                    <a href="https://github.com/calvin-sirimase?tab=repositories" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/calvinsirimase" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/VinDev22" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/vindev24/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image floating">
+                    <img src="img/profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h3>IT Infrastructure Support & DevOps Engineer</h3>
+                    <p>I'm experienced in Installing, Troubleshooting and Maintaining Computer Hardware and Software, Printers, Fingerprint, Networks, Active Directory Windows Server, MS Office, ERP, Linux System Administration and transitioning to DevOps, Cloud, or Frontend Engineer for remote work.</p>
+                    <p>I can work on both small and large scale Infrastructure Projects. I enjoy challenges and new technologies, prioritizing problem solving. I work well in teams and under pressure.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>West Cikarang, Bekasi Regency, ID</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:calvin.e.sirimase@gmail.com">calvin.e.sirimase@gmail.com</a></span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Sc in Computer Science, Adisutjipto Institute of Aerospace Technology (2014-2020)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 877-2706-8557</span>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/uc?export=download&id=1OkBMQwkxZpnzWMW_Xeiyo3e0xwQXhm_M" class="btn btn-primary" download="Calvin_Sirimase_Resume.pdf">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>IT Support & System Administration</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Windows Server">
+                            <div class="skill-icon"><i class="fab fa-windows"></i></div>
+                            <h4>Windows Server</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Linux">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            <h4>Linux</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Active Directory">
+                            <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+                            <h4>Active Directory</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Network Administration">
+                            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            <h4>Network Administration</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Virtualization">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <h4>Virtualization</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Backup Solutions">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>Backup Solutions</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="AWS">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <h4>AWS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Azure">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4>Azure</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="GCP">
+                            <div class="skill-icon"><i class="fab fa-google"></i></div>
+                            <h4>GCP</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Cloud Security">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h4>Cloud Security</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Serverless">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <h4>Serverless</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Cloud Networking">
+                            <div class="skill-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                            <h4>Cloud Networking</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 76%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>DevOps & CI/CD</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Jenkins">
+                            <div class="skill-icon"><i class="fab fa-jenkins"></i></div>
+                            <h4>Jenkins</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Terraform">
+                            <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                            <h4>Terraform</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="GitHub Actions">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <h4>GitHub Actions</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Ansible">
+                            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                            <h4>Ansible</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Monitoring">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Monitoring</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 79%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Container & Orchestration</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Docker">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <h4>Docker</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Kubernetes">
+                            <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                            <h4>Kubernetes</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Helm">
+                            <div class="skill-icon"><i class="fas fa-ship"></i></div>
+                            <h4>Helm</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Docker Compose">
+                            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                            <h4>Docker Compose</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Service Mesh">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <h4>Service Mesh</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 68%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Container Security">
+                            <div class="skill-icon"><i class="fas fa-lock"></i></div>
+                            <h4>Container Security</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frontend Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML/CSS">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Responsive Design">
+                            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h4>Responsive Design</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>React</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Bootstrap">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <h4>Bootstrap</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="SASS/SCSS">
+                            <div class="skill-icon"><i class="fab fa-sass"></i></div>
+                            <h4>SASS/SCSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>IT Infrastructure Support</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="ERP Systems">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>ERP Systems</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Hardware Troubleshooting">
+                            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                            <h4>Hardware Troubleshooting</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Network Management">
+                            <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                            <h4>Network Management</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Firewall Configuration">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h4>Firewall Configuration</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Printer Management">
+                            <div class="skill-icon"><i class="fas fa-print"></i></div>
+                            <h4>Printer Management</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="User Support">
+                            <div class="skill-icon"><i class="fas fa-headset"></i></div>
+                            <h4>User Support</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 96%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 Apr - Present</div>
+                    <div class="timeline-content">
+                        <h3>IT Infrastructure Staff</h3>
+                        <h4>PT. Saka Indah Abadi | West Cikarang, Bekasi Regency</h4>
+                        <p>Provide administrative support for office operations and IT infrastructure.</p>
+                        <ul>
+                            <li>ERP system support and customization with vendor (FINA by Imamatek)</li>
+                            <li>Managing user accounts, permissions, network access and Proxmox</li>
+                            <li>Troubleshooting hardware, software, network issues, and backup systems</li>
+                            <li>Administering hosting, servers (Ubuntu, Windows Server 2008 R2, and 2019 Datacenter), and SQL databases (Firebird)</li>
+                            <li>Configuring and maintaining network infrastructure (LAN, WAN, VPN, Mikrotik, firewalls)</li>
+                            <li>Managing NAS systems (Ubuntu Server 22.04.5.LTS and Synology DS1621+)</li>
+                            <li>Handling mail systems, CMS (CPanel), e-tax invoices, and CCTV systems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 Okt - 2023 March</div>
+                    <div class="timeline-content">
+                        <h3>IT STaff</h3>
+                        <h4>KJPP Antonius Setiady & Rekan │Jakarta</h4>
+                        <p>Responsible</p>
+                        <ul>
+                            <li>Network Admin LAN, WAN, NAS Synology</li>
+                            <li>Computer repair, Printer, Fingerprint and pheriperal</li>
+                            <li>CMS Web admin & CPanel Email Admin and Data Entry and Surveyor</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 Apr - 2022 Aug</div>
+                    <div class="timeline-content">
+                        <h3>IT Support</h3>
+                        <h4>CV. Binaya | Jl. Sultan Babullah No.48, Ambon</h4>
+                        <p>Provided comprehensive IT infrastructure support for the organization.</p>
+                        <ul>
+                            <li>Supporting client devices (computers, printers, fingerprint devices)</li>
+                            <li>Managing directory sharing, printer sharing, troubleshooting hardware, software, network</li>
+                            <li>Serving as a primary data manager using Microsoft Excel</li>
+                            <li>Assisting in managing office administration related to government matters</li>
+                            <li>Coordinating with the sales team regarding field data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-filter="cicd">CI/CD</button>
+                <button class="filter-btn" data-filter="kubernetes">Kubernetes</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="infrastructure cicd">
+                    <div class="project-img">
+                        <img src="img/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Multi-Cloud Infrastructure</h3>
+                        <p>Designed and implemented a fault-tolerant multi-cloud infrastructure using Terraform, spanning AWS and Azure.</p>
+                        <div class="project-tech">
+                            <span>Terraform</span>
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>Ansible</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calvin-sirimase" class="btn btn-sm">View Details</a>
+                            <a href="https://github.com/calvin-sirimase" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="kubernetes cicd">
+                    <div class="project-img">
+                        <img src="img/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kubernetes Cluster Automation</h3>
+                        <p>Built a self-healing Kubernetes cluster with automated scaling and deployment pipelines.</p>
+                        <div class="project-tech">
+                            <span>Kubernetes</span>
+                            <span>Helm</span>
+                            <span>ArgoCD</span>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calvin-sirimase" class="btn btn-sm">View Details</a>
+                            <a href="https://github.com/calvin-sirimase" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="cicd">
+                    <div class="project-img">
+                        <img src="img/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>CI/CD Pipeline Optimization</h3>
+                        <p>Redesigned CI/CD pipelines reducing build times by 65% and enabling zero-downtime deployments.</p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>GitHub Actions</span>
+                            <span>Docker</span>
+                            <span>SonarQube</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calvin-sirimase" class="btn btn-sm">View Details</a>
+                            <a href="https://github.com/calvin-sirimase" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="infrastructure kubernetes">
+                    <div class="project-img">
+                        <img src="img/project4.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Serverless Microservices Architecture</h3>
+                        <p>Implemented a serverless architecture for a high-traffic application using AWS Lambda and API Gateway.</p>
+                        <div class="project-tech">
+                            <span>AWS Lambda</span>
+                            <span>API Gateway</span>
+                            <span>DynamoDB</span>
+                            <span>CloudFormation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calvin-sirimase" class="btn btn-sm">View Details</a>
+                            <a href="https://github.com/calvin-sirimase" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="frontend">
+                    <div class="project-img">
+                        <img src="img/project5.jpg" alt="Project 5">
+                    </div>
+                    <div class="project-info">
+                        <h3>Responsive Portfolio Website</h3>
+                        <p>Designed and developed a modern, responsive portfolio website with interactive elements and smooth animations.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://calvin.sakaindah.com/" class="btn btn-sm">View Details</a>
+                            <a href="https://calvin.sakaindah.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:calvin.e.sirimase@gmail.com">calvin.e.sirimase@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Phone</h3>
+                            <p>+62 877-2706-8557</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Location</h3>
+                            <p>West Cikarang, Bekasi Regency, ID</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/calvin-sirimase?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/calvinsirimase" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/VinDev22" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vindev24/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Calvin<span>Sirimase</span></a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Calvin Sirimase. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+    // Back to top button script with improved mobile support
+    window.onscroll = function() {scrollFunction()};
+    
+    // Throttle function to improve performance on mobile
+    function throttle(func, delay) {
+        let lastCall = 0;
+        return function(...args) {
+            const now = new Date().getTime();
+            if (now - lastCall < delay) {
+                return;
+            }
+            lastCall = now;
+            return func(...args);
+        }
+    }
+    
+    // Use throttled scroll function for better mobile performance
+    const scrollFunction = throttle(function() {
+        const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        
+        if (scrollTop > 300) {
+            backToTopBtn.style.display = "block";
+            // Small delay to ensure display:block takes effect before adding the visible class
+            setTimeout(function() {
+                backToTopBtn.classList.add("visible");
+            }, 10);
+        } else {
+            backToTopBtn.classList.remove("visible");
+            // Wait for the fade-out transition to complete before hiding
+            setTimeout(function() {
+                backToTopBtn.style.display = "none";
+            }, 300);
+        }
+    }, 100); // Throttle to run at most every 100ms
+    
+    function topFunction() {
+        // For Safari
+        document.body.scrollTop = 0;
+        // For Chrome, Firefox, IE and Opera
+        document.documentElement.scrollTop = 0;
+        
+        // Smooth scroll for modern browsers
+        if ('scrollBehavior' in document.documentElement.style) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }
+    
+    // Fix for mobile viewport height issues (100vh)
+    function setMobileHeight() {
+        // First we get the viewport height and multiply it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        document.documentElement.style.setProperty('--real-vh', `${vh}px`);
+    }
+    
+    // Check initial scroll position on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        
+        // Initially hide the button
+        backToTopBtn.style.display = "none";
+        
+        // Then check if we're already scrolled down
+        const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (scrollTop > 300) {
+            backToTopBtn.style.display = "block";
+            setTimeout(function() {
+                backToTopBtn.classList.add("visible");
+            }, 10);
+        }
+        
+        // Add passive event listener for better performance on mobile
+        window.addEventListener('scroll', scrollFunction, { passive: true });
+        
+        // Handle iOS specific issues
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            document.body.classList.add('ios-device');
+        }
+        
+        // Fix for mobile viewport height
+        setMobileHeight();
+        window.addEventListener('resize', setMobileHeight);
+        window.addEventListener('orientationchange', setMobileHeight);
+    });
+    </script>
+    
+    <script src="js/profile-favicon.js"></script>
+    <script src="js/text-visibility.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/title-rotator.js"></script>
+    <script src="js/hero-animation.js"></script>
+    <script src="js/gsap-sections.js"></script>
+    <script src="js/skills-layout.js"></script>
+    <script src="js/project-loader.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>

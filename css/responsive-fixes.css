@@ -1,0 +1,193 @@
+/* Additional responsive fixes for mobile devices */
+
+/* Fix for contact section on mobile */
+@media screen and (max-width: 768px) {
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-item .icon {
+        margin: 0 auto;
+    }
+    
+    .contact-item .details {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contact-item .details h3 {
+        margin-bottom: 5px;
+    }
+    
+    .contact-item .details p, 
+    .contact-item .details a {
+        word-break: break-word;
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .social-links a {
+        margin: 0 8px;
+    }
+    
+    /* Hero section fixes for mobile */
+    .hero {
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        align-items: flex-start !important;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.3;
+    }
+    
+    .hero h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .hero-social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .scroll-down {
+        bottom: 20px !important;
+    }
+    
+    /* Fix floating circles for mobile */
+    .circle-1 {
+        width: 150px;
+        height: 150px;
+        top: -50px;
+        right: -30px;
+    }
+    
+    .circle-2 {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        left: -30px;
+    }
+    
+    .circle-3 {
+        width: 80px;
+        height: 80px;
+        top: 30%;
+        right: 10%;
+    }
+}
+
+/* Specific fixes for iPhone and small screens */
+@media screen and (max-width: 480px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form {
+        order: 1;
+        margin-bottom: 40px;
+    }
+    
+    .contact-item .icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .contact-item .details h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-item .details p, 
+    .contact-item .details a {
+        font-size: 0.85rem;
+    }
+    
+    /* Ensure email address wraps properly */
+    .contact-item .details a {
+        display: inline-block;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    /* Additional hero fixes for very small screens */
+    .hero {
+        padding-top: 70px !important;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .hero p {
+        font-size: 0.9rem !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .hero-social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Fix for iOS devices */
+@supports (-webkit-touch-callout: none) {
+    .contact-item .details a {
+        word-break: break-all;
+    }
+    
+    .hero {
+        height: -webkit-fill-available !important;
+    }
+    
+    .ios-device .hero {
+        min-height: -webkit-fill-available !important;
+    }
+}
+
+/* Fix for notched iPhones */
+@supports (padding: max(0px)) {
+    .hero {
+        padding-top: max(80px, env(safe-area-inset-top, 80px)) !important;
+        padding-bottom: max(40px, env(safe-area-inset-bottom, 40px)) !important;
+    }
+}

@@ -1,0 +1,108 @@
+/* Hero Wave Background Styles */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e6f0ff 0%, #f0f7ff 100%);
+}
+
+/* Wave shape at the bottom */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Radial gradient overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(173, 216, 230, 0.3) 0%, rgba(240, 248, 255, 0.1) 60%);
+    z-index: 0;
+}
+
+/* Ensure content is above the background */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Floating circles decoration */
+.hero-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.floating-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.4) 0%, rgba(135, 206, 250, 0.2) 100%);
+    z-index: 0;
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -50px;
+    opacity: 0.4;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 100px;
+    left: -50px;
+    opacity: 0.3;
+}
+
+.circle-3 {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    right: 15%;
+    opacity: 0.2;
+}
+
+/* Enhanced social icons for hero section */
+.hero-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.hero-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 128, 0.15);
+    transition: all 0.3s ease;
+}
+
+.hero-social-icons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 128, 0.2);
+    background-color: var(--primary-color);
+    color: #ffffff;
+}

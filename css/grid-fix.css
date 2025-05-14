@@ -1,0 +1,48 @@
+/* Grid Layout Fixes */
+
+/* Fix for skill items grid layout */
+.skill-items {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+
+.skill-item {
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Ensure proper responsive behavior */
+@media (max-width: 1200px) {
+    .skill-items {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .skill-items {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-items {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Fix for project grid layout */
+.projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    gap: 30px !important;
+    width: 100% !important;
+}
+
+.project-card {
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
