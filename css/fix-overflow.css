@@ -1,0 +1,30 @@
+/* Fix for skill items overflowing on mobile */
+@media screen and (max-width: 767px) {
+    .skill-category {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .skill-items {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .skill-item {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .skill-item h4 {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        hyphens: auto !important;
+    }
+    
+    .skill-bar {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
