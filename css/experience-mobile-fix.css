@@ -1,0 +1,32 @@
+/* Fix for Work Experience section on mobile */
+@media screen and (max-width: 767px) {
+  /* Remove max-height restriction on timeline body */
+  .compact-timeline-body {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  /* Ensure content is fully visible */
+  .compact-timeline-item.active .compact-timeline-body {
+    max-height: none !important;
+  }
+  
+  /* Improve readability of content */
+  .compact-timeline-content {
+    padding: 0 15px 15px !important;
+  }
+  
+  .compact-timeline-content ul li {
+    margin-bottom: 10px !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Fix spacing issues */
+  .compact-timeline {
+    margin-bottom: 0 !important;
+  }
+  
+  .compact-timeline-item {
+    margin-bottom: 25px !important;
+  }
+}
