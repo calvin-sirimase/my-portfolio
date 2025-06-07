@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const titles = [
         "IT Infrastructure",
         "System Administrator",
-        "DevOps Engineer",
         "Cloud Engineer",
-        "Fontend Web Developer"
+        "DevOps Engineer"
     ];
     
     const titleElement = document.getElementById('job-title');
