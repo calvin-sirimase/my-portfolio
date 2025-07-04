@@ -1,110 +1,64 @@
-# IT Engineer Portfolio
+# Calvin Sirimase Portfolio Website
 
-A modern, responsive, and interactive portfolio website designed specifically for DevOps Engineers to showcase their skills, experience, and projects.
+This is a personal portfolio website showcasing my skills, experience, and projects.
+
+## Firebase Setup Instructions
+
+To set up the visitor counter with Firebase:
+
+1. Create a Firebase account at [firebase.google.com](https://firebase.google.com/)
+2. Create a new Firebase project
+3. Enable Firebase Hosting and Realtime Database
+4. Update the Firebase configuration in `js/visitor-counter-firebase.js` with your own Firebase project details:
+
+```javascript
+const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
+    storageBucket: "YOUR_PROJECT_ID.appspot.com",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
+};
+```
+
+5. Update the `.firebaserc` file with your Firebase project ID:
+
+```json
+{
+  "projects": {
+    "default": "YOUR_PROJECT_ID"
+  }
+}
+```
+
+6. Install Firebase CLI:
+```
+npm install -g firebase-tools
+```
+
+7. Login to Firebase:
+```
+firebase login
+```
+
+8. Deploy to Firebase:
+```
+firebase deploy
+```
 
 ## Features
+- Responsive design
+- Interactive UI elements
+- Visitor counter using Firebase
+- Project showcase
+- Skills visualization
+- Contact form
 
-- **Responsive Design**: Looks great on all devices (desktop, tablet, mobile)
-- **Interactive Elements**: Smooth animations, project filtering, and more
-- **Modern UI**: Clean and professional design with a focus on user experience
-- **Customizable**: Easy to modify and personalize
-- **Optimized Performance**: Fast loading and smooth scrolling
-
-## Sections
-
-1. **Hero Section**: Introduction with a call-to-action
-2. **About**: Personal information and background with caterpillar frame photo effect
-3. **Skills**: Technical skills with visual representation
-4. **Experience**: Work history with timeline layout
-5. **Projects**: Portfolio of work with filtering capability
-6. **Contact**: Contact form and information
-
-## How to Customize
-
-### Basic Information
-
-1. Open `index.html` and update:
-   - Name and title in the hero section
-   - About me content
-   - Contact information
-   - Social media links
-
-### Profile Picture
-
-1. Add your profile picture to the `img` folder with the name `profile.jpg`
-   - Recommended size: 500x500px
-   - The image will automatically be displayed with a caterpillar frame effect
-   - For best results, use a square image with your face centered
-
-### Skills
-
-1. In `index.html`, modify the skills section to reflect your expertise
-2. Adjust the skill level percentages in the style attributes
-
-### Experience
-
-1. Update the timeline items in the experience section with your work history
-2. Add or remove timeline items as needed
-
-### Projects
-
-1. Replace project images in the `img/` folder (project1.jpg, project2.jpg, etc.)
-2. Update project descriptions, technologies, and links
-3. Modify the filter categories if needed
-
-### Colors and Styling
-
-1. Open `css/style.css` and modify the root variables at the top:
-   ```css
-   :root {
-       --primary-color: #2563eb;
-       --secondary-color: #1e40af;
-       /* other color variables */
-   }
-   ```
-
-## Mobile Responsiveness
-
-This portfolio is fully responsive and works well on:
-- Desktop computers
-- Tablets
-- Mobile phones (both portrait and landscape orientations)
-
-The caterpillar frame effect on the About section photo works on all devices and adds a unique visual element to your portfolio.
-
-## File Structure
-
-```
-portfolio/
-├── index.html          # Main HTML file
-├── css/
-│   └── style.css       # Main stylesheet
-├── js/
-│   └── main.js         # JavaScript functionality
-├── img/                # Images folder
-│   ├── profile.jpg     # Your profile picture (add this)
-│   ├── project1.jpg    # Project images (add these)
-│   ├── project2.jpg
-│   ├── project3.jpg
-│   └── project4.jpg
-└── README.md           # This file
-```
-
-## Browser Compatibility
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
-- Mobile browsers
-
-## Credits
-
-- Font Awesome for icons
-- Google Fonts for typography
-- Unsplash for stock images (if used)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Firebase (Hosting & Realtime Database)
+- GSAP for animations

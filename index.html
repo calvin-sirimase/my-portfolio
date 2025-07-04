@@ -12,23 +12,14 @@
     <link rel="stylesheet" href="css/project-styles.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/text-visibility.css">
-    <link rel="stylesheet" href="css/responsive-fixes.css">
-    <link rel="stylesheet" href="css/direct-styles.css">
-    <link rel="stylesheet" href="css/hero-mobile-fixes.css">
-    <link rel="stylesheet" href="css/experience-compact.css">
-    <link rel="stylesheet" href="css/section-colors.css">
-    <link rel="stylesheet" href="css/section-accessibility.css">
-    <link rel="stylesheet" href="css/social-fix.css">
-    <link rel="stylesheet" href="css/mobile-fixes.css">
-    <link rel="stylesheet" href="css/fix-overflow.css">
-    <link rel="stylesheet" href="css/mobile-home-fix.css">
-    <link rel="stylesheet" href="css/navbar-fix.css">
-    <link rel="stylesheet" href="css/visitor-counter.css">
+    <link rel="stylesheet" href="css/responsive-main.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- GSAP for advanced animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
     <link rel="icon" type="image/svg+xml" sizes="16x16" href="favicon/favicon.svg">
@@ -51,10 +42,7 @@
             <div class="logo">
                 <a href="#home">Calvin<span>Sirimase</span></a>
             </div>
-            <div class="visitor-counter-container">
-                <i class="fas fa-eye"></i>
-                Visitors: <span id="visitor-counter">0</span>
-            </div>
+
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -447,100 +435,50 @@
                 <h2>Work Experience</h2>
                 <div class="underline"></div>
             </div>
-            <div class="experience-container">
-                <!-- Tabs Navigation -->
-                <div class="experience-tabs">
-                    <button class="experience-tab active" data-tab="exp-tab-1">IT Infrastructure</button>
-                    <button class="experience-tab" data-tab="exp-tab-2">IT Staff</button>
-                    <button class="experience-tab" data-tab="exp-tab-3">IT Support</button>
+            <div class="experience-tabs">
+                <button class="exp-tab active" data-tab="exp1">IT Infrastructure</button>
+                <button class="exp-tab" data-tab="exp2">IT Staff</button>
+                <button class="exp-tab" data-tab="exp3">IT Support</button>
+            </div>
+            <div class="experience-content">
+                <div id="exp1" class="exp-item active">
+                    <div class="exp-date">2023 Apr - Present</div>
+                    <h3>IT Infrastructure Staff</h3>
+                    <h4>PT. Saka Indah Abadi | West Cikarang, Bekasi Regency</h4>
+                    <p>Provide administrative support for office operations and IT infrastructure.</p>
+                    <ul>
+                        <li>ERP system support and customization with vendor (FINA by Imamatek)</li>
+                        <li>Managing user accounts, permissions, network access and Proxmox</li>
+                        <li>Troubleshooting hardware, software, network issues, and backup systems</li>
+                        <li>Administering hosting, servers (Ubuntu, Windows Server 2008 R2, and 2019 Datacenter), and SQL databases (Firebird)</li>
+                        <li>Configuring and maintaining network infrastructure (LAN, WAN, VPN, Mikrotik, firewalls)</li>
+                        <li>Managing NAS systems (Ubuntu Server 22.04.5.LTS and Synology DS1621+)</li>
+                        <li>Handling mail systems, CMS (CPanel), e-tax invoices, and CCTV systems</li>
+                    </ul>
                 </div>
-                
-                <!-- Tab Contents -->
-                <div id="exp-tab-1" class="experience-content active">
-                    <div class="compact-timeline">
-                        <div class="compact-timeline-item">
-                            <div class="compact-timeline-header">
-                                <div class="compact-timeline-title">
-                                    <h3>IT Infrastructure Staff</h3>
-                                    <h4>PT. Saka Indah Abadi | West Cikarang, Bekasi Regency</h4>
-                                </div>
-                                <div class="compact-timeline-date">2023 Apr - Present</div>
-                                <div class="compact-timeline-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="compact-timeline-body">
-                                <div class="compact-timeline-content">
-                                    <p>Provide administrative support for office operations and IT infrastructure.</p>
-                                    <ul>
-                                        <li>ERP system support and customization with vendor (FINA by Imamatek)</li>
-                                        <li>Managing user accounts, permissions, network access and Proxmox</li>
-                                        <li>Troubleshooting hardware, software, network issues, and backup systems</li>
-                                        <li>Administering hosting, servers (Ubuntu, Windows Server 2008 R2, and 2019 Datacenter), and SQL databases (Firebird)</li>
-                                        <li>Configuring and maintaining network infrastructure (LAN, WAN, VPN, Mikrotik, firewalls)</li>
-                                        <li>Managing NAS systems (Ubuntu Server 22.04.5.LTS and Synology DS1621+)</li>
-                                        <li>Handling mail systems, CMS (CPanel), e-tax invoices, and CCTV systems</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="exp2" class="exp-item">
+                    <div class="exp-date">2022 Oct - 2023 Mar</div>
+                    <h3>IT Staff</h3>
+                    <h4>KJPP Antonius Setiady & Rekan │Jakarta</h4>
+                    <p>Responsible for IT operations and support.</p>
+                    <ul>
+                        <li>Network Admin LAN, WAN, NAS Synology</li>
+                        <li>Computer repair, Printer, Fingerprint and pheriperal</li>
+                        <li>CMS Web admin & CPanel Email Admin and Data Entry and Surveyor</li>
+                    </ul>
                 </div>
-                
-                <div id="exp-tab-2" class="experience-content">
-                    <div class="compact-timeline">
-                        <div class="compact-timeline-item">
-                            <div class="compact-timeline-header">
-                                <div class="compact-timeline-title">
-                                    <h3>IT Staff</h3>
-                                    <h4>KJPP Antonius Setiady & Rekan │Jakarta</h4>
-                                </div>
-                                <div class="compact-timeline-date">2022 Oct - 2023 Mar</div>
-                                <div class="compact-timeline-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="compact-timeline-body">
-                                <div class="compact-timeline-content">
-                                    <p>Responsible for IT operations and support.</p>
-                                    <ul>
-                                        <li>Network Admin LAN, WAN, NAS Synology</li>
-                                        <li>Computer repair, Printer, Fingerprint and pheriperal</li>
-                                        <li>CMS Web admin & CPanel Email Admin and Data Entry and Surveyor</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="exp-tab-3" class="experience-content">
-                    <div class="compact-timeline">
-                        <div class="compact-timeline-item">
-                            <div class="compact-timeline-header">
-                                <div class="compact-timeline-title">
-                                    <h3>IT Support</h3>
-                                    <h4>CV. Binaya | Jl. Sultan Babullah No.48, Ambon</h4>
-                                </div>
-                                <div class="compact-timeline-date">2022 Apr - 2022 Aug</div>
-                                <div class="compact-timeline-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="compact-timeline-body">
-                                <div class="compact-timeline-content">
-                                    <p>Provided comprehensive IT infrastructure support for the organization.</p>
-                                    <ul>
-                                        <li>Supporting client devices (computers, printers, fingerprint devices)</li>
-                                        <li>Managing directory sharing, printer sharing, troubleshooting hardware, software, network</li>
-                                        <li>Serving as a primary data manager using Microsoft Excel</li>
-                                        <li>Assisting in managing office administration related to government matters</li>
-                                        <li>Coordinating with the sales team regarding field data</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="exp3" class="exp-item">
+                    <div class="exp-date">2022 Apr - 2022 Aug</div>
+                    <h3>IT Support</h3>
+                    <h4>CV. Binaya | Jl. Sultan Babullah No.48, Ambon</h4>
+                    <p>Provided comprehensive IT infrastructure support for the organization.</p>
+                    <ul>
+                        <li>Supporting client devices (computers, printers, fingerprint devices)</li>
+                        <li>Managing directory sharing, printer sharing, troubleshooting hardware, software, network</li>
+                        <li>Serving as a primary data manager using Microsoft Excel</li>
+                        <li>Assisting in managing office administration related to government matters</li>
+                        <li>Coordinating with the sales team regarding field data</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -846,20 +784,11 @@
     });
     </script>
     
-    <script src="js/favicon-update.js"></script>
-    <script src="js/text-visibility.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main-optimized.js"></script>
     <script src="js/title-rotator.js"></script>
-    <script src="js/hero-animation.js"></script>
     <script src="js/gsap-sections.js"></script>
-    <script src="js/skills-layout.js"></script>
-    <script src="js/project-loader.js"></script>
     <script src="js/lightbox.js"></script>
-    <script src="js/experience-compact.js"></script>
-    <script src="js/section-transitions.js"></script>
-    <script src="js/social-fix.js"></script>
-    <script src="js/mobile-fixes.js"></script>
-    <script src="js/visitor-counter.js"></script>
+
     <script>
     // Fix for mobile sections visibility
     document.addEventListener('DOMContentLoaded', function() {
